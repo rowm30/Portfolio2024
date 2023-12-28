@@ -1,0 +1,70 @@
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10%;
+    margin-top: 10%;
+    z-index: 2;
+
+    @media(max-width: 768px) {
+        font-size: 40px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    @media(max-width: 480px) {
+        font-size: 30px;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+}
+
+.con1{
+    margin-top: 35%;
+    z-index: 2;
+    position: relative;
+
+    @media(max-width: 768px) {
+        margin-top: 25%;
+    }
+
+    @media(max-width: 480px) {
+        margin-top: 15%;
+    }
+}
+
+p{
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 1.25rem;
+    font-size: 20px;
+    z-index: 2;
+
+    @media(max-width: 768px) {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    @media(max-width: 480px) {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+.text-blue{
+    color: #597dff;
+    text-align: center;
+    z-index: 2;
+
+    @media(max-width: 768px) {
+        text-align: left;
+    }
+
+    @media(max-width: 480px) {
+        text-align: right;
+    }
+}

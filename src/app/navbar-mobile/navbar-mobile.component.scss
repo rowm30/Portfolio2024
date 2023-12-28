@@ -1,0 +1,82 @@
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: for the list and social links */
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    z-index: 300;
+    color: white; /* Set text color to white */
+    font-family: "Poppins", sans-serif; /* Set the font family */
+}
+
+.sublist1 {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Space between grid items */
+}
+
+.sublist1 li:nth-child(1) { grid-column: 1; }
+.sublist1 li:nth-child(2) { grid-column: 2; }
+.sublist1 li:nth-child(3) { grid-column: 3; }
+.sublist1 li:nth-child(4) { grid-column: 1 ; } /* Span the 4th item across two columns */
+.sublist1 li:nth-child(5) { grid-column: 2; }
+
+.md {
+    text-decoration: none;
+    color: inherit; /* Inherit the white color from the parent */
+    font-weight: bold;
+}
+
+.md0 {
+    text-decoration: none;
+    color: inherit; /* Inherit the white color from the parent */
+    font-weight: bold;
+    padding-left: 20%;
+}
+.md1 {
+    text-decoration: none;
+    color: inherit; /* Inherit the white color from the parent */
+    font-weight: bold;
+    padding-left: 50%;
+}
+
+.md2 {
+    text-decoration: none;
+    color: inherit; /* Inherit the white color from the parent */
+    font-weight: bold;
+    padding-left: 70%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link1 {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Stack the list and social links on smaller screens */
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .sublist1 {
+        grid-template-columns: 1fr; /* Stack list items on smaller screens */
+    }
+}

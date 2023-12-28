@@ -1,0 +1,104 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: #fff;
+    background-color: #fff;
+    width: 330px;
+    height: 300px;
+    margin-left: 10%;
+  
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .prjimg1 {
+    width: 100%;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.25;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10%;
+    margin-top: 10%;
+  
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+    }
+  }
+  
+  p {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+  
+    @media (max-width: 768px) {
+      width: 90%;
+      margin-left: 5%;
+      font-size: 1rem;
+    }
+  }
+  
+  h4 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+  
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  
+  .prj2 {
+    display: flex;
+    flex-direction: row;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 1284px) {
+    .card {
+        width: auto; // Allow cards to fit the screen width
+        margin: 10px; // Add some margin around the cards
+    }
+  
+    h1 {
+        font-size: 2.5rem; // Adjust for readability
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+  
+    p, h4 {
+        font-size: 1.2rem; // Adjust font size for readability
+    }
+  
+    .prj2 {
+        flex-direction: column; // Stack the cards vertically
+    }
+  }
