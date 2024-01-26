@@ -62,8 +62,36 @@ p {
     font-size: 140%;
 }
 
-// Responsive SCSS
+// Modified media queries for responsiveness
+@media (max-width: 1284px) {
+    h1 {
+        font-size: 50px; // Adjusted for readability
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    p, .mk4 {
+        width: 95%; // More screen width utilization
+        margin-left: 2.5%; // Center alignment
+        font-size: 18px; // Readability adjustment
+    }
+
+    .img2 {
+        margin-top: 8%;
+        width: 280px; // Adjusted image size
+    }
+
+    .list3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        margin-left: 15px;
+    }
+}
+
 @media (max-width: 992px) {
+    .exp1, .exp2 {
+        display: block; // Stack elements vertically
+    }
+
     h1 {
         font-size: 60px;
         margin-top: 5%;
@@ -85,6 +113,13 @@ p {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         margin-left: 40px;
     }
+
+    .resume-title img {
+        width: 150px; // Adjust image size
+        height: auto; // Maintain aspect ratio
+        display: block; // Ensure it's on its own line
+        margin: 0 auto; // Center the image
+    }
 }
 
 @media (max-width: 600px) {
@@ -94,15 +129,16 @@ p {
         margin-left: 2%;
     }
 
-    p, .mk4 {
+     .mk4 {
         width: 100%;
-        margin-left: 2%;
+        margin-left: -15%;
         font-size: 16px;
+        list-style: inside; // Bullet points inside to save space
     }
+    
 
     .img2 {
-        margin-top: 5%;
-        width: 250px;
+        display: none; // Hide image on very small screens
     }
 
     .list3 {
@@ -110,32 +146,3 @@ p {
         margin-left: 20px;
     }
 }
-
-// Existing styles...
-
-// iPhone 12 Pro Max and other high-resolution devices
-@media (max-width: 1284px) {
-    h1 {
-        font-size: 50px; // Slightly smaller for readability
-        margin-top: 3%;
-        margin-left: 3%;
-    }
-
-    p, .mk4 {
-        width: 95%; // Use more screen width
-        margin-left: 2.5%; // Center align
-        font-size: 18px; // Adjust font size for readability
-    }
-
-    .img2 {
-        margin-top: 8%;
-        width: 280px; // Adjust image size
-    }
-
-    .list3 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        margin-left: 15px;
-    }
-}
-
-// Existing media queries...
